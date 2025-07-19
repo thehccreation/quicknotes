@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuickNote - Minimal Notes App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <header>
+        <h1>QuickNote by THEHCCREATION</h1>
+    </header> -->
+    <button id="toggle-dark" style="display: none;">Toggle Dark Mode</button>
+    <header>
+        <a href="https://thehccreation.github.io/home/">
+            <img src="/assets/hcc-logo-transparent.png" alt="">
+        </a>
+        <h1>
+            QuickNotes</h1>
+    </header>
+
+    <div class="cover">
+
+        <section id="note-section">
+            <textarea id="note-input" placeholder="Write your note here..."></textarea>
+            <div class="btn-grp">
+                <button id="save-note">Save Note</button>
+                <button id="export-pdf">Export PDF</button>
+            </div>
+        </section>
+        <section class="s2">
+            <h2>Your Notes</h2>
+            <ul id="notes-list"></ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Notes are stored in your browser. No account needed.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
