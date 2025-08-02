@@ -60,7 +60,7 @@ exportPdfBtn.addEventListener('click', () => {
     let printWindow = window.open('', '', 'height=600,width=800');
     printWindow.document.write('<html><head><title>QuickNotes by THEHCCREATION</title>');
     printWindow.document.write('</head><body >');
-    printWindow.document.write('<h1>Saved Notes</h1><hr>');
+    printWindow.document.write('<h1>QuickNotes <sub>by THEHCCREATION</sub></h1><hr>');
 
     notes.forEach(note => {
         printWindow.document.write('<p>' + note.replace(/\n/g, '<br>') + '</p><hr>');
@@ -70,3 +70,4 @@ exportPdfBtn.addEventListener('click', () => {
     printWindow.document.close();
     printWindow.print();
 });
+
