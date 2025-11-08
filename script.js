@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (editingNoteId) {
                     // We are in EDIT mode
                     saveEditAndRefreshDOM(editingNoteId, title, content);
-                    console.log(`Note ID ${editingNoteId} successfully updated.`);
+                   // console.log(`Note ID ${editingNoteId} successfully updated.`);
                 } else {
                     // We are in ADD mode
                     const id = Date.now().toString();
@@ -341,4 +341,5 @@ document.addEventListener('DOMContentLoaded', () => {
             clearBtn.addEventListener('click', clearForm);
 
             console.log("QuickNotes 2.0 - Your Personal Note-Taking App by thehccreation.");
+
         });
