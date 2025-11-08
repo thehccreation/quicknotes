@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     saveNoteToLocalStorage(id, title, content);
                     const noteCard = createNoteCard(id, title, content);
                     notesGrid.prepend(noteCard); // Add new note to the top
-                    console.log(`New note ID ${id} successfully added.`);
+                   // console.log(`New note ID ${id} successfully added.`);
                 }
 
                 // Clear the form and reset state regardless of mode
@@ -343,3 +343,4 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("QuickNotes 2.0 - Your Personal Note-Taking App by thehccreation.");
 
         });
+
